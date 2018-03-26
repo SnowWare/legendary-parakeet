@@ -2,11 +2,13 @@ export default [
   {
     path: "/",
     component: () => import("layouts/default"),
-    children: [{ path: "", component: () => import("pages/index") }]
-  },
-  {
-    path: "/learn",
-    component: () => import("pages/learn")
+    children: [
+      { path: "", component: () => import("pages/index") },
+      {
+        path: "/learn",
+        component: () => import("pages/learn")
+      }
+    ]
   },
 
   {
